@@ -4,45 +4,33 @@
     padding:0;
 }
 
-.wrap {
-	height: 100vh;
-	width: 100%;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-}
-
 .label {
-    background-color: black;
+	background-color: black;
 	display: flex;
-	height: 30px;
+	height: 40px;
 	border-radius: 50px;
-	width: 100px;
+	width: 150px;
 	justify-content: space-between;
 	align-items: center;
 	position: relative;
-	padding: 0 15px;
 	transition: all .5s ease-in-out;
 	cursor: pointer;
 	border: 2px solid black;
 }
 
-.checkbox {
-	opacity: 0;
-	position: absolute;
-}
-
 .rond {
 	position: absolute;
-	left: 0%;
+	left: 50%;
 	width: 50%;
 	height: 100%;
 	background: rgb(169, 241, 243);
 	border-radius: 50px;
 	transition: .5s ease all;
 }
-
-checkbox:checked + .label .rond {
-    left:0;
+.checkbox {
+	opacity: 0;
+	position: absolute;
+}
+.checkbox:checked + .label .rond {
+	left: 0;
 }
